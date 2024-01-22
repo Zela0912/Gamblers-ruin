@@ -1,34 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Gambling Page</title>
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gambler's Ruin</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
 </head>
 <body>
-
-<header>
-  <h1>Gambling Emporium</h1>
-</header>
-
-<main>
-  <div class="betting-section">
-    <h2>Place Your Bet</h2>
-    <div class="input-group">
-      <label for="winningChance">Winning Chance:</label>
-      <input type="text" id="winningChance" name="winningChance" placeholder="75%">
+    
+    <div class="mainContainer">
+    <div class="header">
+        <h2>Gambler's ruin</h2>
     </div>
-    <div class="input-group">
-      <label for="betAmount">Bet Amount:</label>
-      <input type="text" id="betAmount" name="betAmount" placeholder="$20">
+    <div class="GamblingPage">
+        <p class="bet1">Place your bets</p>
+        <h1 style="margin-left: 290px;"> Gambling challenge</h1>
+        <p class="bet2">place your bets</p>
+        <img src="images/gambler.png" alt="" class="gambler1">
+        <div class="modeChooser">
+            <h2 class="modeChooserh2">Choose your mode</h2>
+            
+            <form>
+                <ul>
+                  <li>
+                    <label>
+                      <input type="radio" name="gender" value="male"> 1 for 1
+                    </label>
+                  </li>
+              
+                  <li>
+                    <label>
+                      <input type="radio" name="gender" value="female"> Fibonacci
+                    </label>
+                  </li>
+              
+                  <li>
+                    <label>
+                      <input type="radio" name="gender" value="other"> All in
+                    </label>
+                  </li>
+                  
+                  <li>
+                    <label>
+                      <input type="radio" name="gender" value="other"> Martingale
+                    </label>
+                  </li>
+              
+                  </ul>
+              
+                
+              </form>
+              <p class="myp">choose winning chances for player 1</p>
+            <input type="number" class="input1" id="wci" min="0" max="100" placeholder="0-100%" style="text-align: center;">
+            <p class="myp">choose draw chances</p>
+            <input type="text" class="input1">
+            <h3>LETS GAMBLE</h3>
+            <button class="Go" onclick="consolelog1()">Go!</button>
+
+        </div>
+        <img src="images/gambler.png" alt="" class="gambler2">
+
+    
     </div>
-    <button id="betButton">Bet</button>
-  </div>
-</main>
-
-<footer>
-  <p>&copy; 2024 Gambling Emporium</p>
-</footer>
-
+    <div class="footer">
+        <h2 class="footerh">&copy; Copyright reserved</h2>
+    </div>
+    </div>
 </body>
+
+
+
 </html>
