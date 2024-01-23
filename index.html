@@ -14,9 +14,13 @@
         <h2>Gambler's ruin</h2>
     </div>
     <div class="GamblingPage">
-        <p class="bet1">Place your bets</p>
+        <p class="bet1">Place your bets
+          <input type="text" id="starting1" placeholder="player1">
+        </p>
         <h1 style="margin-left: 290px;"> Gambling challenge</h1>
-        <p class="bet2">place your bets</p>
+        <p class="bet1">Place your bets
+          <input type="text" id="starting2" placeholder="player2">
+        </p>
         <img src="images/gambler.png" alt="" class="gambler1">
         <div class="modeChooser">
             <h2 class="modeChooserh2">Choose your mode</h2>
@@ -25,25 +29,25 @@
                 <ul>
                   <li>
                     <label>
-                      <input type="radio" name="gender" value="male"> 1 for 1
+                      <input type="radio" name="option" value="male" id="1for1"> 1 for 1
                     </label>
                   </li>
               
                   <li>
                     <label>
-                      <input type="radio" name="gender" value="female"> Fibonacci
+                      <input type="radio" name="option" value="female" id="fibonacci"> Fibonacci
                     </label>
                   </li>
               
                   <li>
                     <label>
-                      <input type="radio" name="gender" value="other"> All in
+                      <input type="radio" name="option" value="other" id="allin"> All in
                     </label>
                   </li>
                   
                   <li>
                     <label>
-                      <input type="radio" name="gender" value="other"> Martingale
+                      <input type="radio" name="option" value="other" id="martingale"> Martingale
                     </label>
                   </li>
               
@@ -54,7 +58,7 @@
               <p class="myp">choose winning chances for player 1</p>
             <input type="number" class="input1" id="wci" min="0" max="100" placeholder="0-100%" style="text-align: center;">
             <p class="myp">choose draw chances</p>
-            <input type="text" class="input1">
+            <input type="text" class="input1" id="drawch">
             <h3>LETS GAMBLE</h3>
             <button class="Go" onclick="consolelog1()">Go!</button>
 
